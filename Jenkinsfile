@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        // Define the agent where the pipeline will run
-        // For simplicity, using the default agent (usually a Jenkins agent)
-        label 'your-agent-label'
-    }
+    agent any
     
     stages {
         stage('Checkout') {
