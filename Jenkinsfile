@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                sh '/usr/local/bin/node install'
             }
         }
         stage('Test') {
             steps {
-              sh 'npm install'
+              sh '/usr/local/bin/node install'
               }
             }
         }
