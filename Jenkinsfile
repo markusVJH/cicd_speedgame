@@ -14,10 +14,11 @@ pipeline {
               sh '/usr/local/bin/node install'
               }
             }
-        }
+        
         stage('Deploy') {
             steps {
                 echo "Deployed to AWS"
             }
         }
     }
+}
