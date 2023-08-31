@@ -1,0 +1,14 @@
+.circle {
+  display: flex;
+  height: 10rem;
+  width: 10rem;
+  padding: 2rem;
+  border-color: rgb(255, 255, 255);
+  border-width: 5px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
