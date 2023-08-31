@@ -1,5 +1,7 @@
 pipeline {
     agent any
+
+    tools {nodejs "node"}
     
     stages {
         stage('Checkout') {
@@ -11,12 +13,10 @@ pipeline {
                 }
             }
         }
-        
+         stages {
         stage('Build') {
             steps {
                 // Install project dependencies and build the React app
-                sh 'node -v'
-                sh 'npm -v'
                 sh 'npm install'
                 sh 'npm run build'
             }
@@ -55,4 +55,5 @@ pipeline {
             echo 'Pipeline failed!'
         }
     }
+}
 }
