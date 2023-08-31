@@ -15,6 +15,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Install project dependencies and build the React app
+                sh 'node -v'
+                sh 'npm -v'
                 sh 'npm install'
                 sh 'npm run build'
             }
